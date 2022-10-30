@@ -1,0 +1,218 @@
+/*
+*
+*==========THE FRAME STYLES=========
+*
+*/
+
+.frame {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fr1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fr2 {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+}
+
+.fr3 {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+}
+
+
+/*
+*
+*==========THE TITLE STYLE=========
+*
+*/
+
+.title {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 3.5rem;
+    width: 100%;
+}
+
+.title span {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 1.7em;
+    font-weight: bold;
+    border-bottom: 3px solid var(--red);
+    overflow: hidden;
+}
+
+.pageIcon {
+    position: absolute;
+    top: 2.55rem;
+    left: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    transform: translate(-55%, 0);
+}
+
+
+/*
+*
+*==========THE INFORMATION PANEL=========
+*
+*/
+
+.panelContainer {
+    position: relative;
+    top: 3em;
+    left: 0;
+    height: 83vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoPanel {
+    height: 100%;
+    width: 90%;
+    max-width: 25em;
+}
+
+.info1 {
+    background: var(--proposed-orange);
+}
+
+.info2 {
+    background: var(--red);
+}
+
+.info3 {
+    background: var(--sand-yellow);
+}
+
+.infoPanel span {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    height: 40%;
+    width: 90%;
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+}
+
+
+/*
+*
+*=========THE PANEL IMAGE STYLES
+*
+*/
+
+.image {
+    position: relative;
+    top: 3%;
+    left: -1.2em; 
+    height: 45%;
+    width: 100%;
+    border: 1.2em solid white;
+    box-shadow: 0 0 3px 0px rgba(0,0,0,0.3);
+}
+
+.img1 {
+    background: url("../../assets/woman-drinking.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    background-position-x: 75%;
+}
+
+.img2 {
+    background: url("../../assets/wine-serving-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 102%;
+    background-position-x: 75%;
+}
+
+.img3 {
+    background: url("../../assets/breakfast-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:115% 100%;
+    background-position-x: 75%;
+}
+
+/*
+*
+*==========COMPUTER SCREEN STYLES=========
+*
+*/
+@media (min-width: 961px) {
+    .frame {
+        height: 100vh;
+        width: calc(100% / 3);
+        overflow: hidden;
+    }
+    
+    .fr1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .fr2 {
+        position: absolute;
+        top: 0;
+        left: calc(100% / 3);
+    }
+    
+    .fr3 {
+        position: absolute;
+        top: 0;
+        left: calc((100% / 3) * 2);
+    }
+
+    .img1 {
+        background: url("../../assets/woman-drinking.jpg");
+        background-repeat: no-repeat;
+        background-size: 101% 120%;
+        background-position-x: 75%;
+    }
+    
+    .img2 {
+        background: url("../../assets/wine-serving-bg.jpg");
+        background-repeat: no-repeat;
+        background-size:101% 112%;
+        background-position-y: 20%;
+        background-position-x: 75%;
+    }
+    
+    .img3 {
+        background: url("../../assets/breakfast-bg.jpg");
+        background-repeat: no-repeat;
+        background-size:110% 101%;
+        background-position-x: 75%;
+    }
+
+    .infoPanel {
+        height: 100%;
+        width: 90%;
+        max-width: 23em;
+    }
+}

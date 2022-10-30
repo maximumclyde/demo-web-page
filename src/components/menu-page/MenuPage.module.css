@@ -1,0 +1,293 @@
+/*
+*
+*=======THE FRAMES STYLES=====
+*
+*/
+
+.frame {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: white; */
+    background: rgb(62,32,32);
+    background: linear-gradient(150deg, rgba(62,32,32,1) 0%, rgba(143,37,12,1) 45%, rgba(224,82,60,1) 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.innerFrame {
+    height: 40em;
+    width: 55em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background: white;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+}
+
+
+/*
+*
+*=====THE PHOTOS STYLES====
+*
+*/
+
+
+.photosFrame {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: .4em;
+}
+
+.img {
+    height: calc(100% / 3);
+    width: 100%;
+    border: .2em solid white;
+}
+
+.im1 {
+    background: url("../../assets/coffee-mug.jpg");
+    background-size: 100% 120%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    margin-top: .2em;
+}
+
+.im2 {
+    background: url("../../assets/food-bg-2.jpg");
+    background-size: 100% 120%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+}
+
+.im3 {
+    background: url("../../assets/wine-bg.jpg");
+    background-size: 100% 120%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: .2em;
+}
+
+
+/*
+*
+*=======THE MENU STYLE======
+*
+*/
+
+.menuSection {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuTitle {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuTitle img {
+    height: 3em;
+    width: 10em;
+}
+
+.menuBody {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*
+*
+*=========THE MENU BODY STYLE======
+*
+*/
+
+.body {
+    height: 100%;
+    width: calc(50% - 2px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.bodySeparator {
+    height: 80%;
+    width: 4px;
+    border: 0;
+    background-color: black;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px
+}
+
+.bodyTitle {
+    height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: .2em;
+    margin-top: .7em;
+}
+
+
+/*
+*
+*=======THE MENU ITEMS STYLES======
+*
+*/
+
+.bodyTitle span {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    background-color: var(--outrageous-orange);
+    border-radius: 1em;
+}
+
+.bodyItem {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: .3em;
+}
+
+.bodyItem span {
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: left;
+    
+}
+
+.priceSeparator {
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/*
+*
+*=======STYLES FOR SMALL SCREENS===
+*
+*/
+
+@media(max-width: 961px) {
+    .frame {
+        background: white;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .innerFrame {
+        position: absolute;
+        top: 3.5em;
+        left: 0;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .photosFrame {
+        height: 0;
+        width: 0;
+        display: none;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .menuSection {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .menuTitle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4.5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    }
+    
+    .menuBody {
+        height: fit-content;
+        min-height: calc(100vh - 5em);
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .body {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .bodyTitle {
+        margin-top: 2em;
+    }
+    
+    .bodySeparator {
+        height: 0;
+        width: 0;
+        border: 0;
+        background-color: white;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

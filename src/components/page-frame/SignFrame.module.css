@@ -1,0 +1,228 @@
+.frame {
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: url("../../assets/sign.jpg");
+    background-repeat: no-repeat;
+    background-size: 125% 105%;
+    background-position-x: 70%;
+    animation: bgAnimation 30s linear infinite;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-size: 125% 105%;
+    }
+    50% {
+        background-size: 140% 105%;
+    }
+    100% {
+        background-size: 125% 105%;
+    }
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.buttonContainer {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10em;
+}
+
+.buttonContainer a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.button {
+    font-size: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: .4em;
+    padding-right: .4em;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 2px 2px #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button span {
+    margin-left: .5em;
+}
+
+/*
+*
+*========STYLES FOR COMPUTER SCREENS====
+*
+*/
+
+@media(min-width: 961px) {
+    .frame {
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background: unset;
+        background: rgba(255,255,255,0.8);
+    }
+
+    .filter {
+        background: rgba(0,0,0,0);
+    }
+
+    .collage {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        height: calc(100vh - 2em);
+        width: calc(100% - 2em);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        background: rgba(255,255,255,0.8);
+    }
+
+    .col1 {
+        height: 100%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1em solid rgba(0,0,0,0);
+        border-bottom: 1em solid rgba(0,0,0,0);
+        border-left: 0;
+        border-right: .5em solid rgba(0,0,0,0);
+    }
+
+    .col2 {
+        height: 100%;
+        width: 37.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1em solid rgba(0,0,0,0);
+        border-bottom: 1em solid rgba(0,0,0,0);
+        border-left: .5em solid rgba(0,0,0,0);
+        border-right: .5em solid rgba(0,0,0,0);
+    }
+
+    .col3 {
+        height: 100%;
+        width: 37.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1em solid rgba(0,0,0,0);
+        border-bottom: 1em solid rgba(0,0,0,0);
+        border-left: .5em solid rgba(0,0,0,0);
+        border-right: 0;
+    }
+
+    .foto1 {
+        height: 100%;
+        width: 100%;
+        background: url("../../assets/sign.jpg");
+        background-repeat: no-repeat;
+        background-size: 150% 100%;
+        background-position-x: 75%;
+        filter: brightness(50%);
+    }
+
+    .foto2 {
+        height: calc(33% - .5em);
+        width: 100%;
+        background: url("../../assets/store-inside.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 120%;
+        background-position-y: 70%;
+        filter: brightness(50%);
+    }
+
+    .foto3 {
+        height: calc(33% - .5em);
+        width: 100%;
+        background: url("../../assets/wine-bg.jpg");
+        background-size: 100% 210%;
+        background-repeat: no-repeat;
+        background-position-x: -50%;
+        background-position-y: 60%;
+        filter: brightness(50%);
+    }
+
+    .foto4 {
+        height: calc(33% - .5em);
+        width: 100%;
+        background: url("../../assets/porch.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 130%;
+        background-position-y: 50%;
+        background-position-x: -50%;
+        filter: brightness(50%);
+    }
+
+    .foto5 {
+        height: calc(50% - .5em);
+        width: 100%;
+        background: url("../../assets/store-side.jpg");
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: 15%;
+        filter: brightness(50%);
+    }
+
+    .foto6 {
+        height: calc(50% - .5em);
+        width: 100%;
+        background: url("../../assets/serving.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-x: -50%;
+        filter: brightness(50%);
+    }
+
+    .buttonContainer {
+        height: fit-content;
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 5em;
+    }
+
+}
+
+@keyframes largeBgAnimation {
+    0% {
+        background-size: 100% 110%;
+    }
+    50% {
+        background-size: 110% 120%;
+    }
+    100% {
+        background-size: 100% 110%;
+    }
+}

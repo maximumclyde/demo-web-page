@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Ubuntu:wght@300&display=swap');
+
+html {
+  font-family: 'Patrick Hand', cursive;
+}
+
+:root {
+  --sand-yellow: #FEC260;
+  --dark-rose: #A12568;
+  --purple: #3B185F;
+  --dark-purple: #3B185F;
+  --grey-rose: #C996CC;
+  --light-purple: #916BBF;
+  --blue: #003D5B;
+  --dark-blue: #1D2144;
+  --grey: #787A91;
+  --white: #FFFFFE;
+  --red: #D1495B;
+  --rose: #FC60A8;
+  --space-blue: #2B2D42;
+  --blue-gray: #76949F;
+  --kobe: #8F250C;
+  --beige: #EEF5DB;
+  --outrageous-orange: #FF785A;
+  --proposed-orange: #E0523C;
+  --proposed-brown: #3E2020;
+  --light-rose: #ffd3f6;
+  --grass-green: #72B01D;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
